@@ -221,24 +221,136 @@ public class pattern2 {
 
        // pyrimide
 
-       int n =  4;
+      //  int n =  4;
 
-       for(int row = 1; row<=n; row++){
-        // for each row -> variable column
+      //  for(int row = 1; row<=n; row++){
+      //   // for each row -> variable column
 
-          //  spaces
-          for(int col = 1; col<=n-row; col++){
-            System.out.print(" ");
-          }
+      //     //  spaces
+      //     for(int col = 1; col<=n-row; col++){
+      //       System.out.print(" ");
+      //     }
 
-         for(int col =  1; col<=2*row -1; col++){
-            System.out.print("*");
-         }
-         // move to next line 
+      //    for(int col =  1; col<=2*row -1; col++){
+      //       System.out.print("*");
+      //    }
+      //    // move to next line 
 
-         System.out.println();
+      //    System.out.println();
 
-       }
+      //  }
+
+      // int n = 4;
+
+      // for(int row = 1; row<=n; row++){
+      //   //part1
+      //   for(int col= 1; col<=row; col++){
+      //     System.out.print("*");
+      //   }
+
+      //   //part2
+      
+      //   for(int col =1; col<=2*(n-row);col++){
+      //     System.out.print("  ");
+      //   }
+      //   //part3
+      //   for(int col= 1; col<=row; col++){
+      //     System.out.print("*");
+      //   //pert4
+      //   }
+      //   System.out.println();
+      // }  
+
+      // //inverted symmetrical half
+
+      // for(int row = 1; row<=n; row++){
+      //   //part4
+      //   for(int col =1; col<=n-row+1; col++){
+      //     System.out.print(" *");
+      //   }
+      //   // part 5
+
+      //   for(int col=1; col<=2*(row-1); col++){
+      //     System.out.println(" ");
+      //   }
+
+      //   //part6
+      //   for(int col =1; col<=n-row+1; col++){
+      //     System.out.print(" *");
+      //   }
+
+      // }
+
+      // System.out.println();
+
+
+      // int n = 5;
+
+      // for(int row= 1; row<=n; row++){
+      //   for(int col = 1; col<=row; col++){
+      //     System.out.print(col+" ");
+      //   }
+
+      //   System.out.println();
+      // }
+
+      // int n = 6;
+
+      // int count = 1;
+
+      // for(int row = 1; row<=n; row++){
+      //   // for each row -> varible col
+      //   for(int col= 1; col<=row; col++){
+      //     System.out.print(count+ " ");
+
+      //     count++;
+      //   }
+
+      //   // move to next line 
+
+      //   System.out.println();
+      // }
+
+
+      int n=  5;
+
+      for(int row=1; row<=n; row++){
+        for(int col=1; col<=row; col++){
+          int a = n-col;
+          int b= 'A';
+          int ans = a+b;
+          char  finalAns  = (char)ans;
+
+          System.out.print(finalAns + " ");
+        }
+
+        System.out.println();
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
-}
+  }
