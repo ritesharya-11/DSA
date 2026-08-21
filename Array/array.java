@@ -1,52 +1,67 @@
 
+import javax.swing.SpringLayout;
+
+
 
 
 public class array {
-   static void printString(String str){
-      int n = str.length();
-      for(int i = 0; i<=n; i++){
-         char ch  = str.charAt(i);
-         System.out.println(ch);
-      }
-   }
+   // static void printString(String str){
+   //    int n = str.length();
+   //    for(int i = 0; i<=n; i++){
+   //       char ch  = str.charAt(i);
+   //       System.out.println(ch);
+   //    }
+   
 
 
    //----------->COUNT VOWLES I STRING
-   static int getVowelCount(String str){
-      int count = 0;
-      for(int i = 0; i<str.length(); i++){
-         char ch = str.charAt(i);
-         if(ch == 'a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||  ch == 'A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
-            count++;
-         }
-      }
+   // static int getVowelCount(String str){
+   //    int count = 0;
+   //    for(int i = 0; i<str.length(); i++){
+   //       char ch = str.charAt(i);
+   //       if(ch == 'a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||  ch == 'A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+   //          count++;
+   //       }
+   //    }
 
-      return  count;
-   }
+   //    return  count;
+   // }
 
 
 
    // -------> Reverse the string
 
-   static String reverseString(String str){
-      string reverse = "";
-      int n = str.length();
-      for(int i=n-1; i>=0; i--){
-         char ch = str.charAt(i);
-         reverse = reverse + ch;
-      }
+   // static String reverseString(String str){
+   //    string reverse = "";
+   //    int n = str.length();
+   //    for(int i=n-1; i>=0; i--){
+   //       char ch = str.charAt(i);
+   //       reverse = reverse + ch;
+   //    }
 
-      return reverse;
-   }
-
+   //    return reverse;
+   // }
+}
 
    public static void main(String[] args) {
 
-       String str  = "ritesh";
-      System.out.println(reverseString(str));
 
+ // int [][]arr = {
+      //      {1,2,3},
+      //      {4,5,6}
+      // };
 
+    
+      // for(int i = 0; i<arr.length; i++){
+      //    for(int j = 0; j<arr[i].length; j++ ){
+      //       System.out.print(arr[i][j] +" ");
 
+      //    }
+
+      //    System.out.println();
+      
+
+   
 
 
 
@@ -398,7 +413,131 @@ public class array {
    // for(String str: words){
    //    System.out.println(str);
 
+
+   //---------> row wise sum
+
+   // int [][]arr = {
+   //    {1,2,3},
+   //    {4,5,6}
+   //     };
+   //  for(int i  = 0; i<arr.length; i++){
+
+   //    int sum  = 0;
+
+   //    for(int j  = 0; j<arr[i].length; j++){
+
+   //       sum = sum + arr[i][j];
+   //    }
+   //    System.out.println("sum of each row" + i + " "  +sum);
+
+    //--------------------->Problem 3: Column-wise Sum
+      
+   //  int [][]arr = {
+   //    {1,2,3},
+   //    {4,5,6}
+   //     };
+
+   //     for(int j  = 0; j<arr[j].length; j++){
+
+   //       int sum = 0;
+
+   //       for(int i = 0; i<arr.length; i++){
+
+   //          sum = sum +arr[i][j];
+
+   //       }
+
+   //       System.out.println(" Column wise sum " + j + " " +  " " + sum);
+
+    //----------------> Problem 4: Find Maximum Element
+
+   //  int [][]arr = {
+   //    {1,2,3},
+   //     {4,5,6}
+   //    };
+
+   //    int max = arr[0][0];
+
+   //    for(int i = 0; i<arr.length; i++){
+   //       for(int j  = 0; j<arr[i].length; j++){
+            
+   //          if(arr[i][j]>max){
+   //             max = arr[i][j];
+   //          }
+   //       }
+
+   //       System.out.println("max  :" + max);
+   //    }
+
+
+      //-----------------------> Problem 5: Transpose of Matrix
+       
+      //  int [][]arr = {
+      // {1,2,3},
+      //  {4,5,6}
+      // };
+      //  for(int j = 0; j<arr[0].length; j++){
+      //    for(int i =0; i<arr.length; i++){
+      //       System.out.print("  " + arr[i][j]);
+      //    }
+      //    System.out.println();
+      //  }
+
+      //-------->1. Print Diagonal Elements
+
+      // int arr[][] ={
+      //       {1,2,3},
+      //       {4,5,6},
+      //       {7,8,9}
+      // };
+      // System.out.println("Print diagonal element");
+
+      // for(int i = 0; i<arr.length; i++){
+      //    System.out.println(arr[i][i]);
+
+      // }
+
+
+      //------------>3. Search Element in Matrix
+       int arr[][] ={
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+      };
+
+      int target = 9;
+      //  boolean found = false;
+
+       for(int i = 0; i<arr.length; i++){
+         for(int j = 0; j<arr[i].length; j++ ){
+            if(arr[i][j] ==target){
+               System.out.println(" Element found at row:" +i + " Element found at column: " + j);
+
+               // found = true;
+               // break;
+            }
+         }
+
+      //    if(found){
+      //       break;
+      //    }
+      //     if (!found) {
+      //       System.out.println("Element not found");
+      //  }
+
+
+      }
    }
+
+
+    
+
+  
+      
+      
+   
+   
+
 
     
 
@@ -407,7 +546,7 @@ public class array {
 
 
      
-    }
+    
 
     
         
