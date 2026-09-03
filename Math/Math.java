@@ -200,10 +200,25 @@ public class Math {
         }
       }
 
+      //-----------> count digut in a number
+
+      static int  countDigitt(int num){
+        // jabtak num = 0 nhi hoga tab tak chalega
+        // n!= 0 rhega to proccing krega
+
+      
+
+
+        
+      }
+
+
+    }
+
 
     public static void main(String[] args) {
 
-      System.out.println(isArmstrongNumber(123));
+    
 
 
 
@@ -240,7 +255,17 @@ public class Math {
       //  int ans = counttDigit(num);
       //  System.out.println(ans);
 
+
+      int n = 12345;
+4        int count = 0;
+5
+6        while (n > 0) {
+7            count++;
+8            n = n / 10;
+9        }
+10
+11        System.out.println("Number of digits = " + count);
         
     }
     
-}
+  
